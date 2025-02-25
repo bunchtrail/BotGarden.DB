@@ -13,6 +13,11 @@ namespace Infrastructure.Data.Repositories
         {
         }
 
+        public async Task<bool> AreaExistsAsync(int areaId)
+        {
+            return await _context.Areas.AnyAsync(a => a.AreaId == areaId);
+        }
+
         public async Task<IEnumerable<Plant>> GetPlantsInAreaAsync(int areaId)
         {
             return await _context.Plants

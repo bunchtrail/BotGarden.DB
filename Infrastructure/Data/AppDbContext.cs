@@ -45,6 +45,13 @@ namespace Infrastructure.Data
             {
                 entity.HasKey(e => e.ExpositionId);
                 entity.HasIndex(e => e.ExpositionName).IsUnique();
+                
+                // Добавление начальных данных для экспозиций
+                entity.HasData(
+                    new Exposition { ExpositionId = 1, ExpositionName = "Дендрология", Description = "Коллекция древесных растений" },
+                    new Exposition { ExpositionId = 2, ExpositionName = "Флора", Description = "Коллекция растений местной флоры" },
+                    new Exposition { ExpositionId = 3, ExpositionName = "Цветоводство", Description = "Коллекция декоративных цветочных растений" }
+                );
             });
 
             // Конфигурация для Area

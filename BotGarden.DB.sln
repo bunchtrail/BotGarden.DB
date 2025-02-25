@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{3AF266E4-595E-44DD-B168-CAF2A25CC939}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotGarden.API", "..\BotGarden.API\BotGarden.API.csproj", "{F3F1A0E2-FBA5-43AE-8F9C-6C0E156DABBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3AF266E4-595E-44DD-B168-CAF2A25CC939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AF266E4-595E-44DD-B168-CAF2A25CC939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AF266E4-595E-44DD-B168-CAF2A25CC939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F1A0E2-FBA5-43AE-8F9C-6C0E156DABBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F1A0E2-FBA5-43AE-8F9C-6C0E156DABBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F1A0E2-FBA5-43AE-8F9C-6C0E156DABBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F1A0E2-FBA5-43AE-8F9C-6C0E156DABBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,6 +7,9 @@ namespace Infrastructure.Data.Repositories
 {
     public interface IPlantRepository : IRepository<Plant>
     {
+        // Проверка существования области с указанным ID
+        Task<bool> AreaExistsAsync(int areaId);
+        
         // Получение растений в указанной области
         Task<IEnumerable<Plant>> GetPlantsInAreaAsync(int areaId);
         
